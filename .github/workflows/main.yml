@@ -11,9 +11,9 @@ jobs:
       - name: Setup Python Version
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8 # Install the python version needed
+          python-version: 3.8
       - name: Install Python dependencies
         run: python -m pip install --upgrade pip requests
-      - name: Execute Python Script # Run the run.py on the repository root directory
+      - name: Execute Python Script 
         run: |
-          python test.py
+          ./python test.py
