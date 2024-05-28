@@ -16,6 +16,6 @@ def check_api_authentication(url):
         return f"An error occurred: {e}"
 
 # Example usage
-api_url = 'https://localhost:3000/api/items'
+api_url = 'https://www.youtube.com/'
 result = check_api_authentication(api_url)
 print(result)
