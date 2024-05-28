@@ -10,6 +10,10 @@ let items = [
   {
     first_name : "OH MY GOD",
     last_name: "DAMN"
+  },
+  {
+    first_name: "John",
+    last_name: "Lenon"
   }
 ];
 
