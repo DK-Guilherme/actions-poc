@@ -3,7 +3,7 @@ name: security-assesment
 on: [push, pull_request]
 
 jobs:
-  job1:
+  auth-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

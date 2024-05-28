@@ -2,10 +2,8 @@ import requests
 
 def check_api_authentication(url):
     try:
-        # Make an API call
         response = requests.get(url)
 
-        # Check the status code and authentication requirements
         if response.status_code == 401:
             return "The API requires authentication."
         elif response.status_code == 403:
@@ -18,6 +16,6 @@ def check_api_authentication(url):
         return f"An error occurred: {e}"
 
 # Example usage
-api_url = 'https://api.example.com/data'  # Replace with the actual API URL
+api_url = 'https://localhost:3000/api/items'  # Replace with the actual API URL
 result = check_api_authentication(api_url)
 print(result)
